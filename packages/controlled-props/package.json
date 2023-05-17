@@ -1,6 +1,6 @@
 {
   "name": "@solid-primitives/controlled-props",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "The primitives in this package allow you to create controlls for component props.",
   "author": "Alex Lohr <alex.lohr@logmein.com>",
   "contributors": [],
@@ -38,12 +38,11 @@
     "require": "./dist/index.cjs"
   },
   "scripts": {
-    "start": "vite serve dev --host",
-    "dev": "vite serve dev",
-    "page": "vite build dev",
+    "dev": "jiti ../../scripts/dev.ts",
     "build": "jiti ../../scripts/build.ts",
-    "test": "vitest -c ../../configs/vitest.config.ts",
-    "test:ssr": "pnpm run test --mode ssr"
+    "vitest": "vitest -c ../../configs/vitest.config.ts",
+    "test": "pnpm run vitest",
+    "test:ssr": "pnpm run vitest --mode ssr"
   },
   "keywords": [
     "controlled props",

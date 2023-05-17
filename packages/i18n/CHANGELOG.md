@@ -1,5 +1,17 @@
 # @solid-primitives/i18n
 
+## 1.4.0
+
+### Minor Changes
+
+- 9e3a57ed: Add better typing for `useI18n` and `useScopedI18n`
+
+## 1.3.0
+
+### Minor Changes
+
+- c0e23e82: Add `useScopedI18n` helper for creating a module-specific translate
+
 ## 1.2.4
 
 ### Patch Changes

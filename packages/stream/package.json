@@ -1,6 +1,6 @@
 {
   "name": "@solid-primitives/stream",
-  "version": "0.6.8",
+  "version": "0.6.9",
   "description": "Primitive that gets a user media stream from microphone, camera or screen",
   "author": "Alex Lohr <alex.lohr@logmein.com>",
   "license": "MIT",
@@ -39,12 +39,11 @@
     "require": "./dist/index.cjs"
   },
   "scripts": {
+    "dev": "jiti ../../scripts/dev.ts",
     "build": "jiti ../../scripts/build.ts",
-    "test": "vitest -c ../../configs/vitest.config.ts",
-    "test:ssr": "pnpm run test --mode ssr",
-    "start": "vite serve dev --host",
-    "dev": "vite serve dev",
-    "page": "vite build dev",
+    "vitest": "vitest -c ../../configs/vitest.config.ts",
+    "test": "pnpm run vitest",
+    "test:ssr": "pnpm run vitest --mode ssr",
     "demo": "vite serve demo --host"
   },
   "keywords": [

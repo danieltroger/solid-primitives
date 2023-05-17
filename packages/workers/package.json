@@ -38,7 +38,11 @@
   },
   "scripts": {
     "start": "vite -r ./dev/ -c ./dev/vite.config.ts",
-    "build": "jiti ../../scripts/build.ts"
+    "dev": "jiti ../../scripts/dev.ts",
+    "build": "jiti ../../scripts/build.ts",
+    "vitest": "vitest -c ../../configs/vitest.config.ts",
+    "test": "pnpm run vitest",
+    "test:ssr": "pnpm run vitest --mode ssr"
   },
   "keywords": [
     "worker",

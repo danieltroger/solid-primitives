@@ -1,6 +1,6 @@
 {
   "name": "@solid-primitives/props",
-  "version": "3.1.4",
+  "version": "3.1.5",
   "description": "Library of primitives focused around component props.",
   "author": "Damian Tarnawski <gthetarnav@gmail.com>",
   "contributors": [],
@@ -42,11 +42,11 @@
     "require": "./dist/index.cjs"
   },
   "scripts": {
-    "dev": "vite serve dev",
-    "page": "vite build dev",
+    "dev": "jiti ../../scripts/dev.ts",
     "build": "jiti ../../scripts/build.ts",
-    "test": "vitest -c ../../configs/vitest.config.ts",
-    "test:ssr": "pnpm run test --mode ssr"
+    "vitest": "vitest -c ../../configs/vitest.config.ts",
+    "test": "pnpm run vitest",
+    "test:ssr": "pnpm run vitest --mode ssr"
   },
   "dependencies": {
     "@solid-primitives/utils": "workspace:^"

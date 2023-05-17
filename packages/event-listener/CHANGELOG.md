@@ -1,5 +1,18 @@
 # @solid-primitives/event-listener
 
+## 2.2.12
+
+### Patch Changes
+
+- f03c47b0: Improve types of `createEventListenerMap`
+
+## 2.2.11
+
+### Patch Changes
+
+- Updated dependencies [2e0bcedf]
+  - @solid-primitives/utils@6.1.1
+
 ## 2.2.10
 
 ### Patch Changes
