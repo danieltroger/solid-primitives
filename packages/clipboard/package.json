@@ -1,6 +1,6 @@
 {
   "name": "@solid-primitives/clipboard",
-  "version": "1.5.6",
+  "version": "1.5.7",
   "description": "Primitives for reading and writing to clipboard.",
   "author": "David Di Biase <dave.dibiase@gmail.com>",
   "contributors": [
@@ -64,6 +64,6 @@
   },
   "typesVersions": {},
   "devDependencies": {
-    "solid-js": "1.7.6"
+    "solid-js": "1.7.9"
   }
 }

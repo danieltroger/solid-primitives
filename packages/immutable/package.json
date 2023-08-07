@@ -1,6 +1,6 @@
 {
   "name": "@solid-primitives/immutable",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Primitive for rectifying immutable values and dealing with immutability in Solid.",
   "author": "Damian Tarnawski <gthetarnav@gmail.com>",
   "contributors": [],
@@ -62,7 +62,7 @@
   "devDependencies": {
     "@reduxjs/toolkit": "^1.9.5",
     "redux": "^4.2.1",
-    "solid-js": "1.7.6",
-    "solid-transition-group": "^0.2.2"
+    "solid-js": "1.7.9",
+    "solid-transition-group": "^0.2.3"
   }
 }

@@ -1,6 +1,6 @@
 {
   "name": "@solid-primitives/scroll",
-  "version": "2.0.17",
+  "version": "2.0.18",
   "description": "Reactive primitives to react to element/window scrolling.",
   "author": "David Di Biase <dave.dibiase@gmail.com>",
   "contributors": [
@@ -63,6 +63,6 @@
   },
   "typesVersions": {},
   "devDependencies": {
-    "solid-js": "1.7.6"
+    "solid-js": "1.7.9"
   }
 }

@@ -1,5 +1,18 @@
 # @solid-primitives/props
 
+## 3.1.8
+
+### Patch Changes
+
+- d35e8b01: Reduce `if` statements in `combineStyle` and allow for `undefined` params.
+
+## 3.1.7
+
+### Patch Changes
+
+- Updated dependencies [92c1e5c4]
+  - @solid-primitives/utils@6.2.1
+
 ## 3.1.6
 
 ### Patch Changes

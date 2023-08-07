@@ -1,6 +1,6 @@
 {
   "name": "@solid-primitives/memo",
-  "version": "1.3.2",
+  "version": "1.3.4",
   "description": "Collection of custom memo primitives. They extend Solid's createMemo functionality while keeping the usage similar.",
   "author": "Damian Tarnawski @thetarnav <gthetarnav@gmail.com>",
   "contributors": [],
@@ -63,7 +63,7 @@
   "devDependencies": {
     "@solid-primitives/mouse": "workspace:^",
     "@solidjs/router": "^0.8.2",
-    "solid-js": "1.7.6"
+    "solid-js": "1.7.9"
   },
   "peerDependencies": {
     "solid-js": "^1.6.12"

@@ -1,6 +1,6 @@
 {
   "name": "@solid-primitives/rootless",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "description": "A collection of helpers that aim to simplify using reactive primitives outside of reactive roots, and managing disposal of reactive roots.",
   "author": "Damian Tarnawski @thetarnav <gthetarnav@gmail.com>",
   "license": "MIT",
@@ -60,6 +60,6 @@
     "solid-js": "^1.6.12"
   },
   "devDependencies": {
-    "solid-js": "1.7.6"
+    "solid-js": "1.7.9"
   }
 }

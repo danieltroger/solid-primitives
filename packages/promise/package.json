@@ -1,6 +1,6 @@
 {
   "name": "@solid-primitives/promise",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "description": "Promised one-time watch for changes. Await a reactive condition.",
   "author": "Damian Tarnawski @thetarnav <gthetarnav@gmail.com>",
   "license": "MIT",
@@ -59,6 +59,6 @@
   },
   "typesVersions": {},
   "devDependencies": {
-    "solid-js": "1.7.6"
+    "solid-js": "1.7.9"
   }
 }

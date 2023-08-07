@@ -15,8 +15,11 @@ export type InputMask = InputMaskFn | InputMaskArray | InputMaskRegex | string;
 
 export const stringMaskRegExp: Record<string, RegExp> = {
   9: /\d/,
+  0: /\d?/,
   a: /[a-z]/i,
+  o: /[a-z]?/i,
   "*": /\w/,
+  "?": /\w?/,
 };
 
 /** Convert a string mask to an array mask */
@@ -26,25 +29,24 @@ export const stringMaskToArray = (mask: string, regexps = stringMaskRegExp) =>
 /** Convert a regex mask to a mask function */
 export const regexMaskToFn =
   (regex: RegExp, replacer: (...args: ReplaceArgs) => string): InputMaskFn =>
-  (value: string, selection: Selection) =>
-    [
-      value.replace(regex, (...args) => {
-        const replacement = replacer(...args);
-        const index = args[args.length - 2];
-        selection[0] +=
-          index < selection[0]
-            ? 0
-            : ((replacement.length - args[0].length) / args[0].length) *
-              Math.max(selection[0] - index, args[0].length);
-        selection[1] +=
-          index < selection[1]
-            ? 0
-            : ((replacement.length - args[0].length) / args[0].length) *
-              Math.max(selection[1] - index, args[0].length);
-        return replacement;
-      }),
-      selection,
-    ];
+  (value: string, selection: Selection) => [
+    value.replace(regex, (...args) => {
+      const replacement = replacer(...args);
+      const index = args[args.length - 2];
+      selection[0] +=
+        index < selection[0]
+          ? 0
+          : ((replacement.length - args[0].length) / args[0].length) *
+            Math.max(selection[0] - index, args[0].length);
+      selection[1] +=
+        index < selection[1]
+          ? 0
+          : ((replacement.length - args[0].length) / args[0].length) *
+            Math.max(selection[1] - index, args[0].length);
+      return replacement;
+    }),
+    selection,
+  ];
 
 /** Convert an array mask to a mask function */
 export const maskArrayToFn =
